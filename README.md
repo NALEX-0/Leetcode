@@ -15,4 +15,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1021-remove-outermost-parentheses](https://github.com/NALEX-0/Leetcode/tree/master/1021-remove-outermost-parentheses) |
+## Array
+|  |
+| ------- |
+| [0001-two-sum](https://github.com/NALEX-0/Leetcode/tree/master/0001-two-sum) |
+## Hash Table
+|  |
+| ------- |
+| [0001-two-sum](https://github.com/NALEX-0/Leetcode/tree/master/0001-two-sum) |
 <!---LeetCode Topics End-->
