@@ -1,19 +1,19 @@
 class Solution {
 public:
     string removeOuterParentheses(string s) {
-        stack<char> stack;
+        int depth = 0;
         string result = ""; 
 
         for (auto c : s) {
             if (c == '(') {
-                if (!stack.empty()) {
+                if (depth > 0) {
                     result += c;
                 }
-                stack.push(c);
+                depth++;
             }
             else {
-                stack.pop();
-                if (!stack.empty()) {
+                depth--;
+                if (depth > 0) {
                     result += c;
                 }
             }
