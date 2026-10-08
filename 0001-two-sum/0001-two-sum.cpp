@@ -13,12 +13,6 @@ public:
                 result.push_back(i);
                 return result;
             }
-
-            // if (m.contains(dif)) {
-            //     result.push_back(m[dif]);
-            //     result.push_back(i);
-            //     return result;
-            // }
             m[nums[i]] = i;
         }
         return result;
