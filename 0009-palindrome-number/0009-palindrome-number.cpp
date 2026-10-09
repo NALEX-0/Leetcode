@@ -1,31 +1,12 @@
 class Solution {
 public:
     bool isPalindrome(int x) {
-        // Edge case
-        if (x < 0) { 
-            return false;
-        }
-        
-        // Find the divisor
-        int divisor = 1;
-        while (x / divisor >= 10) {
-            divisor *= 10;
-        }
-
-        // Compare first and last digits
-        while (x > 0) {
-            int first = x / divisor;
-            int last = x % 10;
-
-            if (first != last) {
+        string n = to_string(x);
+        for (int i = 0; i < n.size(); i++) {
+            if (n[i] != n[n.size() - i - 1]) {
                 return false;
             }
-
-            // Remove both digits
-            x = (x % divisor) / 10;
-            divisor /= 100;
         }
-
         return true;
     }
 };
